@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="car-header">
+        <h3>Users</h3>
+    </div>
+    <div class="car-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>document</th>
+                    <th>idRol</th>
+                    <th>status</th>
+                    <th>acctions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let us of users"  class="text-center">
+                    <td>{{us.name}}</td>
+                    <td>{{us.document}}</td>
+                    <td>{{us.idRol}}</td>
+                    <td>{{us.status}}</td>
+                    <td>
+                        <button class="btn btn-warning">editar</button>&nbsp;
+                        <button class="btn btn-danger">eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
